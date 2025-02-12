@@ -1,0 +1,12 @@
+body{
+    background-color: #a7a7a7;
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+.divLinks a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}

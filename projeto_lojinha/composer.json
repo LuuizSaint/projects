@@ -1,0 +1,17 @@
+{
+    "name": "luizr/projeto_lojinha",
+    "description": "Um projetinho de uma lojinha por puro aprendizado!",
+    "authors": [
+        {
+            "name": "Luiz R.",
+            "email": "luizroberto44630@gmail.com"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}

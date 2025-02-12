@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.divBtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divBtn a{
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+.divBtn a:hover{
+    text-decoration: underline;
+    color: #0d6efd;
+}
+/* == */
+.divTelDate{
+    display: flex;
+}

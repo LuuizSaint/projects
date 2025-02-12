@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+:root {
+  --first-color: #e1e1e1;
+  --second-color: #fff;
+  --sub-pargp-color: #000;
+  --font--color: #2f3336;
+  --transition: all 0.3s ease-in-out;
+}
+/* Body */
+#ls-containerBody {
+  background-color: var(--first-color);
+}
+/*!== MOBILE !==*/
+/* Nav Menu*/
+.ls-menuIcon {
+  position: absolute;
+  padding: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--second-color);
+  z-index: 999;
+}
+.ls-menuIcon i {
+  font-size: 1.5rem;
+}
+.ls-menuLinks {
+  display: none;
+  list-style: none;
+  color: var(--second-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.active {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.ls-menuLinks li {
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+.ls-menuLinks a {
+  text-decoration: none;
+  color: var(--second-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+}
+/*=====================================*/
+/* Clock */
+#ls-clockContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+#ls-clockContainer .ls-clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  font-size: 1rem;
+  color: var(--second-color);
+}
+#ls-clockContainer .ls-clock h3 {
+  font-size: 2.5rem;
+}
+#ls-clockContainer .ls-clock p {
+  font-size: 0.8rem;
+  margin-top: -15px;
+}
+/*=====================================*/
+/* Main Header */
+#ls-containerHeader .ls-imgContainer {
+  background-color: var(--sub-pargp-color);
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/predio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#ls-containerHeader img {
+  display: none;
+}
+#ls-containerHeader {
+  background-color: var(--second-color);
+}
+#ls-headerContent {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#ls-headerContent h1 {
+  font-size: 3.2rem;
+  background-image: linear-gradient(to right, #34495e, #327aff);
+  background-clip: text;
+  color: transparent;
+}
+#ls-headerContent h3 {
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 40px 0 20px 0;
+}
+#ls-headerContent p {
+  padding: 0px 10px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+#ls-headerContent form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+}
+#ls-headerContent form input[type="email"] {
+  width: 90%;
+  padding: 10px 0 10px 15px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 1px solid #2f333650;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+#ls-headerContent form button {
+  width: 90%;
+  padding: 12px 0px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--second-color);
+  background-image: linear-gradient(to right, #34495e, #327aff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+/*=====================================*/
+/* Main Content */
+#ls-mainContent {
+  background-color: var(--first-color);
+}
+#ls-mainContent h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 70px 0 30px 0;
+}
+#ls-mainContent p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#ls-gridContainer {
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 30% 30% 30%;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+#ls-gridContainer img {
+  width: 100%;
+}
+/*=====================================*/
+/* Footer */
+#ls-containerMain footer p {
+  font-size: 0.8rem;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: var(--first-color);
+}
+/*=====================================*/
+/*=============================================================================*/
+/*!== TABLET !==*/
+@media screen and (min-width: 768px) {
+  /* Nav Menu */
+  #ls-containerNav .ls-menuLinks,
+  .ls-menuIcon i {
+    font-size: 2rem;
+  }
+  /* Clock */
+  #ls-clockContainer .ls-clock {
+    margin: 30px;
+  }
+  #ls-clockContainer .ls-clock h3 {
+    font-size: 4rem;
+  }
+
+  #ls-clockContainer .ls-clock p {
+    font-size: 1rem;
+  }
+  /* Header Content */
+  #ls-headerContent h1 {
+    font-size: 4.2rem;
+  }
+  #ls-headerContent h3 {
+    font-size: 1.2rem;
+  }
+  #ls-headerContent p {
+    font-size: 1rem;
+    padding: 0px 35px;
+  }
+
+  /* Main Content */
+  #ls-mainContent h2 {
+    font-size: 2.7rem;
+  }
+  #ls-mainContent p {
+    font-size: 1.2rem;
+  }
+}
+/*=============================================================================*/
+/*!== DESKTOP !==*/
+@media screen and (min-width: 1220px) {
+  /* Nav Menu */
+  #ls-containerNav {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+    z-index: 999;
+  }
+  #ls-containerHeader .ls-menuIcon {
+    display: none;
+  }
+  #ls-containerHeader .ls-menuLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ls-menuLinks li {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ls-menuLinks li i {
+    display: flex;
+    align-items: end;
+  }
+  .ls-menuLinks a {
+    padding: 5px 60px;
+    transition: all 0.2s ease-in-out;
+  }
+  .ls-menuLinks a:hover {
+    background-color: #327aff;
+    box-shadow: 0px 0px 10px #34495e;
+    border-radius: 20px 0px 20px 20px;
+  }
+  /* Header Content */
+  #ls-headerContent h1 {
+    font-size: 5.8rem;
+  }
+  #ls-headerContent h3 {
+    font-size: 1.4rem;
+  }
+  #ls-headerContent p {
+    width: 550px;
+  }
+  #ls-headerContent form {
+    width: 550px;
+  }
+  #ls-headerContent form input[type="email"]:focus {
+    border: 1px solid #327aff;
+    box-shadow: 0px 0px 5px #34495e;
+  }
+  #ls-headerContent form button:hover {
+    background-image: linear-gradient(to right, #327aff, #327aff);
+    box-shadow: 0px 0px 5px #34495e;
+  }
+  /* Grid Content */
+  #ls-gridContainer {
+    grid-template-rows: 45% 45%;
+    grid-template-columns: 30% 30% 30%;
+  }
+  #ls-gridContainer img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    margin: auto;
+  }
+  #ls-gridContainer img:hover {
+    width: 97%;
+  }
+}
+/*=============================================================================*/
